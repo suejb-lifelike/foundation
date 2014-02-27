@@ -350,7 +350,7 @@
     },
 
     close_video : function (e) {
-      var video = $('.flex-video', e.target),
+      var video = $(self).find('.flex-video', e.target),
           iframe = $('iframe', video);
 
       if (iframe.length > 0) {
@@ -361,7 +361,7 @@
     },
 
     open_video : function (e) {
-      var video = $('.flex-video', e.target),
+      var video = $(self).find('.flex-video', e.target),
           iframe = video.find('iframe');
 
       if (iframe.length > 0) {
